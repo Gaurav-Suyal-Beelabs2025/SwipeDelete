@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <!--on below line we are creating a
+      linear layout for grid view item-->
+
+        <!--on below line we are creating
+            a simple image view-->
+    <ImageView
+        android:id="@+id/idIVCourse"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="48dp"
+        android:padding="5dp"
+        android:src="@drawable/rectangle_2919__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <!--on below line we are creating
+            a simple text view-->
+        <TextView
+            android:id="@+id/idTVCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:textSize="14sp"
+            android:gravity="top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/idIVCourse"
+            android:text="Order Delivered Rider has reached \nthe pick up"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/group_34047"
+    android:layout_marginTop="3dp"
+    android:id="@+id/ic_watch"
+    app:layout_constraintStart_toStartOf="@id/idTVCourse"
+    app:layout_constraintTop_toBottomOf="@id/idTVCourse"
+    app:layout_constraintStart_toEndOf="@id/idIVCourse"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="20 Minuts"
+    android:textColor="@color/black"
+    android:layout_marginStart="5dp"
+    app:layout_constraintBottom_toBottomOf="@id/ic_watch"
+    app:layout_constraintTop_toTopOf="@id/ic_watch"
+    app:layout_constraintTop_toBottomOf="@id/ic_watch"
+    app:layout_constraintStart_toEndOf="@id/ic_watch"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
